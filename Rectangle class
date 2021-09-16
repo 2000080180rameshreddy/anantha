@@ -1,0 +1,31 @@
+class Rectangle
+{
+   int l=3;
+   int b=2;
+   void update(int len,int bre)
+   {
+    l=len;
+    b=bre;
+   }
+   int area()
+   {
+     int ar;
+     ar=l*b;
+     return ar;
+   }
+   int perimeter()
+   {
+     int peri;
+     peri=2*(l+b);
+     return peri;
+   }
+    public static void main(String args[])
+    {
+      Rectangle R=new Rectangle();
+      R.update(10,5);
+      int area=R.area();
+      System.out.println("area is:" +area);
+      int perimeter=R.perimeter();
+      System.out.println("perimeter is:" +perimeter);
+     }
+}
