@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Codechef
+{
+	public static void main (String[] args)
+	{
+	    Scanner sc=new Scanner(System.in);
+		int T,N,l=0,f=0,s=0;
+		T=sc.nextInt();
+		for(int i=0;i<T;i++){
+		    	N=sc.nextInt();
+		        l=N%10;
+		        while(N!=0) {
+                    f= N%10;
+                    N=N/10;
+        }
+		    s=l+f;
+		    System.out.println(""+s);
+		}
+		
+	}
+}
